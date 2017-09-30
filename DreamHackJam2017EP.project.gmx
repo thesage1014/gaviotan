@@ -9,14 +9,17 @@
     <sprite>sprites\spr_map</sprite>
     <sprite>sprites\spr_dome</sprite>
     <sprite>sprites\spr_mineral1</sprite>
-    <sprite>sprites\spr_gaviotan</sprite>
+    <sprite>sprites\spr_farmers</sprite>
     <sprite>sprites\spr_staticband</sprite>
     <sprite>sprites\spr_gem1</sprite>
     <sprite>sprites\textbox</sprite>
+    <sprite>sprites\spr_cameralens</sprite>
+    <sprite>sprites\spr_cursor</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg1</background>
     <background>background\background1</background>
+    <background>background\background2</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -26,20 +29,34 @@
       <object>objects\obj_mineral1</object>
       <object>objects\obj_gaviotan</object>
     </objects>
-    <object>objects\wakeup_bgwiggler</object>
-    <object>objects\obj_gem1</object>
-    <object>objects\obj_staticband</object>
-    <object>objects\fadein</object>
     <objects name="words">
-      <object>objects\msgTemplate</object>
+      <object>objects\msg_template</object>
+      <object>objects\msg_wakeup</object>
+      <object>objects\msg_sight</object>
+      <object>objects\msg_contact</object>
     </objects>
+    <objects name="intro">
+      <object>objects\intro_fadein</object>
+      <object>objects\intro_fadeout</object>
+      <object>objects\wakeup_bgwiggler</object>
+      <object>objects\obj_gem2</object>
+      <object>objects\obj_gem1</object>
+      <object>objects\obj_staticband</object>
+      <object>objects\obj_staticband2</object>
+      <object>objects\obj_visitor1</object>
+      <object>objects\obj_visitor2</object>
+      <object>objects\obj_cameralens</object>
+    </objects>
+    <object>objects\explode</object>
   </objects>
-  <timelines name="timelines">
-    <timeline>timelines\timeline0</timeline>
-  </timelines>
+  <timelines name="timelines"/>
   <rooms name="rooms">
-    <room>rooms\wakeup</room>
-    <room>rooms\map</room>
+    <room>rooms\wmap</room>
+    <rooms name="intro">
+      <room>rooms\wakeup</room>
+      <room>rooms\contact</room>
+      <room>rooms\sight</room>
+    </rooms>
     <room>rooms\room2</room>
   </rooms>
   <help>

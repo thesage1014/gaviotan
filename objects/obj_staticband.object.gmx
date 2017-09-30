@@ -3,7 +3,7 @@
   <spriteName>spr_staticband</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -28,7 +28,7 @@
             <string>
 //y = -384-(sca*sprite_get_height(image_index));
 image_yscale = 1+sin(global.wiggle)*.5;
-x = -random(1024);
+if(irandom(jigprob) == 1) x = -random(1024);
 </string>
           </argument>
         </arguments>
