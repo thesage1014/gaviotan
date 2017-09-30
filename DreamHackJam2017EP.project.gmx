@@ -11,6 +11,8 @@
     <sprite>sprites\spr_mineral1</sprite>
     <sprite>sprites\spr_gaviotan</sprite>
     <sprite>sprites\spr_staticband</sprite>
+    <sprite>sprites\spr_gem1</sprite>
+    <sprite>sprites\textbox</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg1</background>
@@ -24,15 +26,21 @@
       <object>objects\obj_mineral1</object>
       <object>objects\obj_gaviotan</object>
     </objects>
-    <object>objects\bgwiggler</object>
+    <object>objects\wakeup_bgwiggler</object>
+    <object>objects\obj_gem1</object>
     <object>objects\obj_staticband</object>
+    <object>objects\fadein</object>
+    <objects name="words">
+      <object>objects\msgTemplate</object>
+    </objects>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\map</room>
     <room>rooms\wakeup</room>
+    <room>rooms\map</room>
+    <room>rooms\room2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
