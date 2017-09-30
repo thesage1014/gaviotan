@@ -31,8 +31,8 @@
     <timeline>timelines\timeline0</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\wakeup</room>
     <room>rooms\map</room>
+    <room>rooms\wakeup</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
