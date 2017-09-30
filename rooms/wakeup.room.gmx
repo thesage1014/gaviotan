@@ -53,6 +53,7 @@ background_x[0] = -display_get_gui_width()/2</code>
   </views>
   <instances>
     <instance objName="bgwiggler" x="1120" y="256" name="inst_B762F2D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_staticband" x="0" y="384" name="inst_AE072622" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
