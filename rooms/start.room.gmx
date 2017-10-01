@@ -23,9 +23,9 @@ global.vvil = 6
 //current resources
 global.resc[global.vwat] = 100
 global.resc[global.vpow] = 100
-global.resc[global.vjun] = 100
+global.resc[global.vjun] = 10
 global.resc[global.vfud] = 100
-global.resc[global.vlov] = 100
+global.resc[global.vlov] = 10
 global.resc[global.vvil] = 1
 //adding resources
 global.resa[global.vwat] = 10
@@ -45,6 +45,8 @@ global.resvil[1] = 0
 global.resvil[2] = 0
 global.vilavail = 3
 
+global.time = 0
+global.sun = 1
 global.map_visitored = 0
 
 draw_set_font(font0)

@@ -3,7 +3,7 @@
   <spriteName>spr_hut</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>2</depth>
   <persistent>0</persistent>
   <parentName>obj_post</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -151,7 +151,7 @@ if(global.resc[global.vpow] - global.resd[global.vpow] &gt; power_needed) {
         food_needed = 3 - workers*2
         if(global.resc[global.vfud] - global.resd[global.vfud] &gt; food_needed) {
             working = 1
-            global.resa[global.vlov] += 5 + workers*10
+            global.resa[global.vlov] += workers*10
             global.resd[global.vpow] += power_needed
             global.resd[global.vfud] += food_needed
             global.resd[global.vwat] += water_needed

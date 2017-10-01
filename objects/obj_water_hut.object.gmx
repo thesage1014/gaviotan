@@ -3,7 +3,7 @@
   <spriteName>spr_water_hut</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>2</depth>
   <persistent>0</persistent>
   <parentName>obj_post</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hovered = 0;
+            <string>pump_speed = 4
+hovered = 0;
 workers = 0;
 working = 1;
 </string>
@@ -142,10 +143,10 @@ working = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>power_needed = 4 + workers*3
+            <string>power_needed = pump_speed + workers*2
 if(global.resc[global.vpow] - global.resd[global.vpow] &gt; power_needed) {
     working = 1
-    global.resa[global.vwat] += 10 + workers*10
+    global.resa[global.vwat] += 1 + pump_speed*4 + workers*10
     global.resd[global.vpow] += power_needed
 } else {
     power_needed = 0
@@ -181,6 +182,10 @@ if(global.resc[global.vpow] - global.resd[global.vpow] &gt; power_needed) {
 } else
     color = $ffffff
 draw_sprite_ext(sprite_index,-1,x,y,1+(workers*.3),1+(workers*.3),0,color,1)
+
+draw_set_colour($d0f285);
+draw_text(x-33, y-72, pump_speed)
+draw_set_colour(c_white);
 </string>
           </argument>
         </arguments>

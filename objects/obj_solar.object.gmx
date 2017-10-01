@@ -146,7 +146,7 @@ working = 1;
 needed = global.vjun
 if(global.resc[needed] - global.resd[needed] &gt; junk_needed) {
     working = 1
-    global.resa[global.vpow] += 10
+    if(global.sun&gt;0) global.resa[global.vpow] += 22
     global.resd[needed] += junk_needed
 } else {
     junk_needed = 0

@@ -145,7 +145,7 @@ working = 1;
             <string>water_needed = 10 + workers*4
 if(global.resc[global.vwat] - global.resd[global.vwat] &gt; water_needed) {
     working = 1
-    global.resa[global.vfud] += 10 + workers*10
+    global.resa[global.vfud] += 21 + workers*10
     global.resd[global.vwat] += water_needed
 } else {
     water_needed = 0

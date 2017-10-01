@@ -54,7 +54,8 @@
     <instance objName="msg_sight" x="128" y="480" name="inst_C00A4A04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gem2" x="512" y="383" name="inst_E24174FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cameralens" x="512" y="370" name="inst_039A44AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_staticband" x="0" y="768" name="inst_1CD2A84A" locked="0" code="global.wiggle = 0&#xA;jigprob = 80" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_staticband" x="0" y="384" name="inst_1CD2A84A" locked="0" code="global.wiggle = 0&#xA;jigprob = 80" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_press_z" x="672" y="640" name="inst_4C7F457F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

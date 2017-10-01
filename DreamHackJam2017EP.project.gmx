@@ -30,6 +30,10 @@
     <sprite>sprites\spr_to_map</sprite>
     <sprite>sprites\spr_ico_love</sprite>
     <sprite>sprites\spr_solar</sprite>
+    <sprite>sprites\spr_time</sprite>
+    <sprite>sprites\spr_arrowd</sprite>
+    <sprite>sprites\spr_pad</sprite>
+    <sprite>sprites\spr_press_z</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg1</background>
@@ -69,6 +73,7 @@
       <object>objects\obj_visitor1</object>
       <object>objects\obj_visitor2</object>
       <object>objects\obj_cameralens</object>
+      <object>objects\obj_press_z</object>
     </objects>
     <object>objects\obj_explode</object>
     <objects name="ovillage">
@@ -90,6 +95,10 @@
       <object>objects\obj_vilreadout</object>
       <object>objects\resmanager</object>
       <object>objects\obj_pump_arrow</object>
+      <object>objects\obj_pump_arrowd</object>
+      <object>objects\obj_time</object>
+      <object>objects\obj_sunfader</object>
+      <object>objects\obj_pad</object>
     </objects>
   </objects>
   <rooms name="rooms">
