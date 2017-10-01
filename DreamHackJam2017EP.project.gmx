@@ -12,30 +12,38 @@
     <sprite>sprites\spr_farmers</sprite>
     <sprite>sprites\spr_staticband</sprite>
     <sprite>sprites\spr_gem1</sprite>
-    <sprite>sprites\textbox</sprite>
+    <sprite>sprites\spr_textbox</sprite>
+    <sprite>sprites\spr_guibox</sprite>
     <sprite>sprites\spr_cameralens</sprite>
     <sprite>sprites\spr_cursor</sprite>
+    <sprite>sprites\spr_crops</sprite>
+    <sprite>sprites\spr_water_hut</sprite>
+    <sprite>sprites\spr_ico_water</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg1</background>
     <background>background\background1</background>
     <background>background\background2</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
   <objects name="objects">
-    <objects name="map">
+    <objects name="omap">
       <object>objects\i_map</object>
       <object>objects\obj_dome</object>
       <object>objects\obj_mineral1</object>
       <object>objects\obj_gaviotan</object>
     </objects>
-    <objects name="words">
+    <objects name="owords">
       <object>objects\msg_template</object>
       <object>objects\msg_wakeup</object>
       <object>objects\msg_sight</object>
       <object>objects\msg_contact</object>
     </objects>
-    <objects name="intro">
+    <objects name="ointro">
       <object>objects\intro_fadein</object>
       <object>objects\intro_fadeout</object>
       <object>objects\wakeup_bgwiggler</object>
@@ -47,10 +55,17 @@
       <object>objects\obj_visitor2</object>
       <object>objects\obj_cameralens</object>
     </objects>
-    <object>objects\explode</object>
+    <object>objects\obj_explode</object>
+    <objects name="ovillage">
+      <object>objects\obj_water_hut</object>
+      <object>objects\ico_water</object>
+      <object>objects\obj_vgui</object>
+      <object>objects\obj_readout</object>
+      <object>objects\obj_crops</object>
+    </objects>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
+    <room>rooms\start</room>
     <room>rooms\wmap</room>
     <rooms name="intro">
       <room>rooms\wakeup</room>
@@ -58,6 +73,9 @@
       <room>rooms\sight</room>
     </rooms>
     <room>rooms\room2</room>
+    <rooms name="village">
+      <room>rooms\village</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
