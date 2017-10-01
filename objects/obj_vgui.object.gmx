@@ -38,7 +38,7 @@ if(vstep % 150 == 0) {
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="50">
+    <event eventtype="6" enumb="57">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -55,7 +55,57 @@ if(vstep % 150 == 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.clicked != -1) instance_create( 10,10,global.clicked);
+            <string>if(global.clicked != -1) {
+    check_villagers()
+    if(global.clicked.workers &gt; 0) {
+        villen = array_length_1d(global.resvil)
+        for(i=0;i&lt;villen;i++) {
+            if(global.resvil[i] == global.clicked) {
+                global.resvil[i] = 0
+                global.clicked.workers--
+                break
+            }
+        }
+    }
+}
+global.clicked = -1
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="56">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.clicked != -1) {
+    check_villagers()
+    if(global.vilavail) {
+        villen = array_length_1d(global.resvil)
+        for(i=0;i&lt;villen;i++) {
+            if(global.resvil[i] == 0) {
+                global.resvil[i] = global.clicked
+                global.clicked.workers++
+                global.resa[global.vwat]++
+                check_villagers()
+                i=villen
+            }
+        }
+    }
+}
 global.clicked = -1
 </string>
           </argument>
