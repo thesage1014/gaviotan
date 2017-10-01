@@ -21,6 +21,9 @@
     <sprite>sprites\spr_ico_water</sprite>
     <sprite>sprites\spr_villager</sprite>
     <sprite>sprites\spr_hut</sprite>
+    <sprite>sprites\spr_pwr</sprite>
+    <sprite>sprites\spr_ico_jun</sprite>
+    <sprite>sprites\spr_ico_food</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg1</background>
@@ -65,8 +68,11 @@
       <object>objects\obj_post</object>
       <object>objects\obj_water_hut</object>
       <object>objects\obj_crops</object>
-      <object>objects\ico_water</object>
       <object>objects\ico_villagers</object>
+      <object>objects\ico_water</object>
+      <object>objects\ico_pwr</object>
+      <object>objects\ico_jun</object>
+      <object>objects\ico_food</object>
       <object>objects\obj_vgui</object>
       <object>objects\obj_readout</object>
       <object>objects\obj_vilreadout</object>

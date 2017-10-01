@@ -25,15 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.vstep++;
-vstep = global.vstep;
-if(vstep % 150 == 0) {
-    event_user(0)//world tick
-    global.resc[global.vwat] += global.resa[global.vwat]-global.resd[global.vwat];
-    global.resc[global.vpow] += global.resa[global.vpow]-global.resd[global.vpow];
-    global.resc[global.vjun] += global.resa[global.vjun]-global.resd[global.vjun];
-}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
