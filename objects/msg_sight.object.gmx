@@ -109,7 +109,7 @@ else { //if current character is more than the amount in the current message
             <kind>1</kind>
             <string>draw_sprite(sprite_index, -1, x, y)
 draw_set_colour($dee1b6);
-draw_text(x+16, y+20, message_draw); //draw the text at the coordinates
+draw_text_ext(x+16, y+20, message_draw,32,736); //draw the text at the coordinates
 draw_set_colour($ffffff);
 </string>
           </argument>

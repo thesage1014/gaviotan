@@ -27,10 +27,13 @@
             <kind>1</kind>
             <string>draw_set_colour($66b8e1);//current
 draw_text(x, y, global.resc[resid]); //draw the text at the coordinates
-draw_set_colour($d0f285);//adding
-draw_text(x-15, y+30, "+" + string(global.resa[resid]));
-draw_set_colour($3255bd);//draining
-draw_text(x+38, y+30, "-" + string(global.resd[resid]));
+if(global.resa[resid]-global.resd[resid] &lt; 0) {
+    draw_set_colour($3255bd);//red draining
+} else {
+    draw_set_colour($d0f285);//cyan adding
+}
+draw_text(x-15, y+25, "+" + string(global.resa[resid]));
+draw_text(x+38, y+25, "-" + string(global.resd[resid]));
 draw_set_colour($ffffff);
 </string>
           </argument>

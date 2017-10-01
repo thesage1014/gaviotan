@@ -18,32 +18,38 @@ global.vwat = 1
 global.vpow = 2
 global.vjun = 3
 global.vfud = 4
-global.vvil = 5
+global.vlov = 5
+global.vvil = 6
 //current resources
 global.resc[global.vwat] = 100
 global.resc[global.vpow] = 100
 global.resc[global.vjun] = 100
 global.resc[global.vfud] = 100
+global.resc[global.vlov] = 100
 global.resc[global.vvil] = 1
 //adding resources
 global.resa[global.vwat] = 10
 global.resa[global.vpow] = 10
 global.resa[global.vjun] = 10
+global.resa[global.vlov] = 10
 global.resa[global.vfud] = 10
 //draining resources
 global.resd[global.vwat] = 15
 global.resd[global.vpow] = 15
 global.resd[global.vjun] = 15
-global.resd[global.vfud] = 15
+global.resd[global.vlov] = 15
+global.resa[global.vfud] = 10
 //villager array
 global.resvil[0] = 0
 global.resvil[1] = 0
 global.resvil[2] = 0
 global.vilavail = 3
 
+global.map_visitored = 0
+
 draw_set_font(font0)
 
-room_goto(village)</code>
+room_goto(wmap)</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

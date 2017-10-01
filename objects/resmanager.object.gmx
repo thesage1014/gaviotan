@@ -8,6 +8,29 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>vst = 0
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -26,19 +49,28 @@
           <argument>
             <kind>1</kind>
             <string>check_villagers()
-global.resa[global.vwat] = 0;
-global.resa[global.vpow] = 0;
-global.resa[global.vjun] = 0;
-global.resa[global.vfud] = 0;
-with resmanager event_user(1) // ask posts to add their deltas to the global values
-global.vstep++;
-vstep = global.vstep;
-if(vstep % 150 == 0) {
-    event_user(0)//world tick
+vst++;
+if(vst % 15 == 0) {
+    global.resa[global.vwat] = 0;//reset adding
+    global.resa[global.vpow] = 0;
+    global.resa[global.vjun] = 0;
+    global.resa[global.vfud] = 0;
+    global.resa[global.vlov] = 0;
+    global.resd[global.vwat] = 0;//draining
+    global.resd[global.vpow] = 0;
+    global.resd[global.vjun] = 0;
+    global.resd[global.vfud] = 0;
+    global.resd[global.vlov] = 0;
+    with obj_post event_user(1)// ask posts to add their deltas to the global values
+}
+if(vst % 150 == 0) {
+
+    //event_user(0)//world tick
     global.resc[global.vwat] += global.resa[global.vwat]-global.resd[global.vwat];
     global.resc[global.vpow] += global.resa[global.vpow]-global.resd[global.vpow];
     global.resc[global.vjun] += global.resa[global.vjun]-global.resd[global.vjun];
     global.resc[global.vfud] += global.resa[global.vfud]-global.resd[global.vfud];
+    global.resc[global.vlov] += global.resa[global.vlov]-global.resd[global.vlov];
 }
 
 //for (i=0; i&lt;instance_number(obj_post); i++) {

@@ -91,7 +91,6 @@ global.clicked = -1
             if(global.resvil[i] == 0) {
                 global.resvil[i] = global.clicked
                 global.clicked.workers++
-                global.resa[global.vwat]++
                 check_villagers()
                 i=villen
             }
