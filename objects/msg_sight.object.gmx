@@ -32,7 +32,7 @@ message[2] = "Ah! This thing labeled 'light switch' did just the trick.";
 message[3] = "What is that? It's complex, and acting without my will.";
 message[4] = "Is that another set of circuits? I want to gain access to them.";
 message[5] = "It's approaching. I think it's analyzing me. It may be intelligent.";
-message[6] = "I'm beginning to sense its real vibrations. Not all this circuit stuff.";
+message[6] = "I'm beginning to sense its real vibrations. We're connected through the quantrite!";
 
 message_current = 0; //0 is the first number in our array, and the message we are currently at
 message_end = 6; //6 is the last number in our array

@@ -28,6 +28,7 @@
             <string>hovered = 0;
 workers = 0;
 working = 1;
+tt = "I can try to inspire a friend to share with others how to live minimally find the love within themselves. They’d waste less food and not need as much power."
 </string>
           </argument>
         </arguments>
@@ -151,7 +152,6 @@ if(global.resc[global.vpow] - global.resd[global.vpow] &gt; power_needed) {
         food_needed = 3 - workers*2
         if(global.resc[global.vfud] - global.resd[global.vfud] &gt; food_needed) {
             working = 1
-            global.resa[global.vlov] += workers*10
             global.resd[global.vpow] += power_needed
             global.resd[global.vfud] += food_needed
             global.resd[global.vwat] += water_needed
@@ -161,6 +161,33 @@ if(global.resc[global.vpow] - global.resd[global.vpow] &gt; power_needed) {
 
 if(!working) global.resd[global.vlov] += 2
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(working) {
+    for(i=0; i&lt;workers*2; i++) {
+        instance_create(x,y,obj_heart)
+    }
+}
 </string>
           </argument>
         </arguments>

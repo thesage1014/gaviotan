@@ -46,13 +46,14 @@ global.resvil[1] = 0
 global.resvil[2] = 0
 global.vilavail = 3
 
+global.tto = ""
 global.day = 0
 global.time = 0
 global.sun = 1
 global.map_visitored = 0
 
 draw_set_font(font0)
-
+audio_play_sound(ericPugh,1,1)
 room_goto(wakeup)</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>

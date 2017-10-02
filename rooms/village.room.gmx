@@ -84,6 +84,8 @@
     <instance objName="obj_pad" x="562" y="472" name="inst_9BDAF9FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_day" x="106" y="128" name="inst_3A03CF89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bonfire" x="230" y="388" name="inst_293AEF61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tooltip" x="128" y="624" name="inst_0BB8BBA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tooltip" x="1088" y="840" name="inst_2FAED13C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

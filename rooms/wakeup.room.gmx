@@ -56,7 +56,8 @@ background_x[0] = -display_get_gui_width()/2;</code>
     <instance objName="wakeup_bgwiggler" x="-32" y="-32" name="inst_B762F2D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gem1" x="512" y="384" name="inst_A0B4AE29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_staticband" x="0" y="383" name="inst_4B5E4F31" locked="0" code="jigprob = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_press_z" x="704" y="640" name="inst_984F9726" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_press_z" x="672" y="640" name="inst_984F9726" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cameralens" x="527" y="382" name="inst_E17219A7" locked="0" code="visible = 0&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>//write your messages in an array, starting at 0, like so
-message[0] = "They've figured it out.";
+message[0] = "They've come to fear me.";
 message[1] = "I suppose I wasn't wise enough for this. I pushed too hard and lost their trust, which was the worst fate of all.";
 message[2] = "I'll try again in a different timeline!";
 message[3] = "";
