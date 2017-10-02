@@ -34,6 +34,9 @@
     <sprite>sprites\spr_arrowd</sprite>
     <sprite>sprites\spr_pad</sprite>
     <sprite>sprites\spr_press_z</sprite>
+    <sprite>sprites\spr_pad2</sprite>
+    <sprite>sprites\spr_bonfire</sprite>
+    <sprite>sprites\spr_dudes</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg1</background>
@@ -58,12 +61,16 @@
     </objects>
     <objects name="owords">
       <object>objects\msg_template</object>
+      <object>objects\msg_gameover</object>
+      <object>objects\msg_no_love</object>
+      <object>objects\msg_solar</object>
       <object>objects\msg_wakeup</object>
       <object>objects\msg_sight</object>
       <object>objects\msg_contact</object>
     </objects>
     <objects name="ointro">
       <object>objects\intro_fadein</object>
+      <object>objects\over_fadein</object>
       <object>objects\intro_fadeout</object>
       <object>objects\wakeup_bgwiggler</object>
       <object>objects\obj_gem2</object>
@@ -83,6 +90,7 @@
       <object>objects\obj_explore_beach</object>
       <object>objects\obj_crops</object>
       <object>objects\obj_hut</object>
+      <object>objects\obj_bonfire</object>
       <object>objects\ico_villagers</object>
       <object>objects\ico_water</object>
       <object>objects\ico_pwr</object>
@@ -99,10 +107,14 @@
       <object>objects\obj_time</object>
       <object>objects\obj_sunfader</object>
       <object>objects\obj_pad</object>
+      <object>objects\obj_day</object>
     </objects>
+    <object>objects\object47</object>
+    <object>objects\obj_exploder</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\start</room>
+    <room>rooms\gameover</room>
     <room>rooms\wmap</room>
     <rooms name="intro">
       <room>rooms\wakeup</room>

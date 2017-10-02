@@ -26,16 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>//write your messages in an array, starting at 0, like so
-message[0] = "What is this? Everything is made of circuits.";
-message[1] = "Wait, maybe I'm made of circuits.";
-message[2] = "I'll learn what all I can feel. Hmm...";
-message[3] = "I sense a shape! This is me! This is my shape! The circuits seem to be attached to it.";
-message[4] = "So that's what's vibrating me. What can I vibrate though?";
-message[5] = "Hmm, this thing is complex. It must be another type of vibration.";
-message[6] = "I think I'll call it sight.";
+message[0] = "The villagers are quite unhappy! I sense they don't trust my energy any more.";
+message[1] = "Oh no! What is this feeling?";
 
 message_current = 0; //0 is the first number in our array, and the message we are currently at
-message_end = 6; //6 is the last number in our array
+message_end = 1; //6 is the last number in our array
 message_draw = ""; //this is what we 'write' out. It's blank right now
 increase = 1; //the speed at which new characters are added
 characters = 0; //how many characters have already been drawn
@@ -70,11 +65,6 @@ message_length = string_length(message[message_current]); //get the number of ch
     message_draw = string_copy(message[message_current], 0, characters); //copy string to current character
 } 
 else { //if current character is more than the amount in the current message
-    if(characters == 0) {
-        visible = 0; 
-    } else {
-        visible = 1;
-    }
     if (keyboard_check_pressed(ord("Z"))) { //if we press Z...
         if (message_current &lt; message_end) { //if there are more messages left to show (0 -&gt; 6, in our case)
             message_current += 1; //increase the message by 1
@@ -83,6 +73,7 @@ else { //if current character is more than the amount in the current message
             message_draw = ""; //clear the drawn text
         }
         else { //if our messages are done (we reach 6, in our case)...
+            room_goto(gameover)
             instance_destroy(); //destroy the object
         }
     }

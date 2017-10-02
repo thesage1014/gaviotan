@@ -28,6 +28,10 @@
             <string>image_index = floor(global.time*.001/360*14)
 global.time += 360
 global.sun = dsin(global.time*.001)
+if(global.time/360000 &gt; global.day) {
+    global.day++
+    with resmanager event_user(2)
+}
 </string>
           </argument>
         </arguments>

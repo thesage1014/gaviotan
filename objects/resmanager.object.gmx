@@ -65,14 +65,14 @@ if(vst % 15 == 0) {
 }
 if(vst % 150 == 0) {
 
-    //event_user(0)//world tick
+    with obj_post event_user(0)//world tick
     global.resc[global.vwat] += global.resa[global.vwat]-global.resd[global.vwat];
     global.resc[global.vpow] += global.resa[global.vpow]-global.resd[global.vpow];
     global.resc[global.vjun] += global.resa[global.vjun]-global.resd[global.vjun];
     global.resc[global.vfud] += global.resa[global.vfud]-global.resd[global.vfud];
     global.resc[global.vlov] += global.resa[global.vlov]-global.resd[global.vlov];
 }
-
+if(global.resc[global.vlov] &lt; 0) instance_create(128, 480, msg_no_love)
 //for (i=0; i&lt;instance_number(obj_post); i++) {
 //   posts[i] = instance_find(obj_post,i);
 //   posts[i].rtype

@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="8" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,18 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(abs(global.sun&lt;.1)) {
-    draw_set_alpha(.2-abs(global.sun)*2);
-    draw_set_colour($3255bd);
-    draw_rectangle(0,0,display_get_gui_width(),display_get_gui_height(),false);
-    draw_set_alpha(1);
-}
-if(global.sun &lt; 0) {
-    draw_set_alpha(min(abs(global.sun),.4));
-    draw_set_colour($443b37);
-    draw_rectangle(0,0,display_get_gui_width(),display_get_gui_height(),false);
-    draw_set_alpha(1);
-}
+            <string>if(irandom(30) == 0)
+    instance_create(irandom(1000)+x-500,irandom(600)+y-300,obj_explode)
 </string>
           </argument>
         </arguments>

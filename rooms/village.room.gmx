@@ -53,9 +53,9 @@
   <instances>
     <instance objName="obj_water_hut" x="586" y="529" name="inst_4B6B82C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_vgui" x="896" y="0" name="inst_C208F38B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ico_water" x="960" y="168" name="inst_327B8CC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ico_water" x="960" y="163" name="inst_327B8CC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_readout" x="928" y="192" name="inst_A832CF89" locked="0" code="resid = global.vwat" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ico_villagers" x="960" y="48" name="inst_D2F89CFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ico_villagers" x="960" y="43" name="inst_D2F89CFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_vilreadout" x="928" y="72" name="inst_F93E39AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="resmanager" x="1056" y="0" name="inst_F4A918E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_crops" x="293" y="86" name="inst_057CB6E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -66,15 +66,15 @@
     <instance objName="obj_hut" x="363" y="405" name="inst_B8C47050" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hut" x="305" y="450" name="inst_91922EF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hut" x="209" y="256" name="inst_D0CCE50F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ico_pwr" x="960" y="288" name="inst_31B4356E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ico_pwr" x="960" y="283" name="inst_31B4356E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_readout" x="928" y="312" name="inst_4709A927" locked="0" code="resid = global.vpow&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ico_jun" x="960" y="408" name="inst_F8E3FA10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ico_jun" x="960" y="403" name="inst_F8E3FA10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_readout" x="928" y="432" name="inst_295308E2" locked="0" code="resid = global.vjun" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ico_food" x="960" y="528" name="inst_C2ED70D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ico_food" x="960" y="523" name="inst_C2ED70D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_readout" x="928" y="552" name="inst_564F06B2" locked="0" code="resid = global.vfud" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_explore_beach" x="730" y="42" name="inst_63935FAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pump_arrow" x="608" y="416" name="inst_A4B0B4E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ico_love" x="960" y="648" name="inst_2F83B6A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ico_love" x="960" y="643" name="inst_2F83B6A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_readout" x="928" y="672" name="inst_3D8F1F9E" locked="0" code="resid = global.vlov&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solar" x="280" y="105" name="inst_EF34EABA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_time" x="64" y="72" name="inst_CAAA6B5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -82,6 +82,8 @@
     <instance objName="obj_sunfader" x="1088" y="0" name="inst_9E6FC89A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pump_arrowd" x="608" y="456" name="inst_FCBC2EF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pad" x="562" y="472" name="inst_9BDAF9FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_day" x="106" y="128" name="inst_3A03CF89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bonfire" x="230" y="388" name="inst_293AEF61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

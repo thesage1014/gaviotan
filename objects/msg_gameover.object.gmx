@@ -3,7 +3,7 @@
   <spriteName>spr_textbox</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,16 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>//write your messages in an array, starting at 0, like so
-message[0] = "What is this? Everything is made of circuits.";
-message[1] = "Wait, maybe I'm made of circuits.";
-message[2] = "I'll learn what all I can feel. Hmm...";
-message[3] = "I sense a shape! This is me! This is my shape! The circuits seem to be attached to it.";
-message[4] = "So that's what's vibrating me. What can I vibrate though?";
-message[5] = "Hmm, this thing is complex. It must be another type of vibration.";
-message[6] = "I think I'll call it sight.";
+message[0] = "They've figured it out.";
+message[1] = "I suppose I wasn't wise enough for this. I pushed too hard and lost their trust, which was the worst fate of all.";
+message[2] = "I'll try again in a different timeline!";
+message[3] = "";
 
 message_current = 0; //0 is the first number in our array, and the message we are currently at
-message_end = 6; //6 is the last number in our array
+message_end = 3; //6 is the last number in our array
 message_draw = ""; //this is what we 'write' out. It's blank right now
 increase = 1; //the speed at which new characters are added
 characters = 0; //how many characters have already been drawn
@@ -77,13 +74,14 @@ else { //if current character is more than the amount in the current message
     }
     if (keyboard_check_pressed(ord("Z"))) { //if we press Z...
         if (message_current &lt; message_end) { //if there are more messages left to show (0 -&gt; 6, in our case)
+            if(message_current == 2) instance_create(512, 383, obj_exploder);
             message_current += 1; //increase the message by 1
             message_length = string_length(message[message_current]);  //get the new character length for message
             characters = 0; //set the characters back to 0
             message_draw = ""; //clear the drawn text
         }
         else { //if our messages are done (we reach 6, in our case)...
-            instance_destroy(); //destroy the object
+            game_restart(); //destroy the object
         }
     }
 }

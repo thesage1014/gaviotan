@@ -28,6 +28,8 @@
             <string>hovered = 0;
 workers = 0;
 working = 1;
+upgrading = 0
+upgraded = 0
 </string>
           </argument>
         </arguments>
@@ -142,15 +144,42 @@ working = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>junk_needed = workers
+            <string>junk_needed = workers * (1-upgraded)
 needed = global.vjun
 if(global.resc[needed] - global.resd[needed] &gt; junk_needed) {
     working = 1
-    if(global.sun&gt;0) global.resa[global.vpow] += 22
+    if(global.sun&gt;0) global.resa[global.vpow] += 22 + upgraded*10
     global.resd[needed] += junk_needed
 } else {
-    junk_needed = 0
     working = 0
+    junk_needed = 0
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>upgrading += workers*working
+if(upgrading &gt;= 10 &amp;&amp; upgraded = 0) {
+    upgraded = 1
+    instance_create(128, 480, msg_solar)
 }
 </string>
           </argument>
@@ -181,7 +210,7 @@ if(global.resc[needed] - global.resd[needed] &gt; junk_needed) {
         color = $3255bd
 } else
     color = $ffffff
-draw_sprite_ext(sprite_index,-1,x,y,1+(workers*.3),1+(workers*.3),0,color,1)
+draw_sprite_ext(sprite_index,upgraded,x,y,1+(workers*.3),1+(workers*.3),0,color,1)
 </string>
           </argument>
         </arguments>

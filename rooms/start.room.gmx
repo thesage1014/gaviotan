@@ -11,7 +11,8 @@
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code>//event_user(1) is a call to posts to add their values to the recently emptied res deltas
-
+//event_user(0) is called each time resources get updated
+//event_user(2) is called each day
 global.vstep = 0
 //resource IDs
 global.vwat = 1
@@ -45,13 +46,14 @@ global.resvil[1] = 0
 global.resvil[2] = 0
 global.vilavail = 3
 
+global.day = 0
 global.time = 0
 global.sun = 1
 global.map_visitored = 0
 
 draw_set_font(font0)
 
-room_goto(wmap)</code>
+room_goto(wakeup)</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
